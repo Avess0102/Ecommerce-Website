@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+.one p, h1, span{
+    text-align: left;
+}
+
+@media(max-width: 768px){
+    .one p, h1, span, button{
+        text-align: center;
+    }
+
+    .one h1{
+        font-weight: 700;
+        color: #222;
+    }
+
+    .one img{
+        padding-top: 2.5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .one button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+}
+
+@media(max-width: 450px){
+    .one .pad{
+        padding: 10%;
+    }
+    .one h1{
+        font-size: 30px;
+        padding: 1%;
+        font-weight: 700;
+        color: #222;
+    }
+}
+
+.one i{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+}
+
+i{ 
+    border: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.navb .li{
+    margin-left: 25%; 
+    background-color: #fff;
+}
+
+.navb .li li{ 
+    padding: 1% 10%; 
+    cursor:pointer; 
+    text-transform: uppercase;     
+    font-size: 18px;
+    background-color: #fff;
+} 
+
+.navb .li i:hover{
+    padding: 3.4%;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.one p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.one{
+    background-color: #F1F1F1;
+    padding: 2%;
+}
+
+/* .john{
+    background-color: #191919;
+    padding: 7%;
+    color: #F1F1F1;
+    text-align: center;
+} */
+ 
+
+.latestProduct{
+    padding: 2%;
+}
+
+.two{
+    background-color: #f1f1f1; 
+}
+
+.two p{
+    text-align: left;
+}
+
+@media(max-width: 768px){
+
+    .two{
+        background-color: #f1f1f1;
+        margin-top: 2%;
+        margin-right: 25%;
+        padding: 2%;
+    }
+
+    .two p{
+        text-align: center;
+    }
+
+    .two img{
+        width: 60%;
+    }
+    .two h2{
+        text-align: center;
+    }
+    .two a{
+        background-color: darkblue;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 450px){
+
+    .two{ 
+        margin: 5% 5% 0 5%; 
+        padding: 5%;
+    }
+
+    .two p{
+        font-size: 10px; 
+    }
+
+    .two h2{
+        font-size: 18px;
+        color: #222;
+        font-weight: 700;
+    } 
+
+    .two a{
+        font-size: SMALL;
+    }
+}
+
+@media(max-width: 390px){ 
+
+    .two h2{
+        font-size: 16px; 
+    } 
+} 
+
+.MultiCarousel { 
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%; 
+    position:relative; }
+    
+.MultiCarousel .MultiCarousel-inner { 
+    transition: 1s ease all; 
+    float: left; 
+}
+
+.MultiCarousel .MultiCarousel-inner .item { 
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item > div { 
+    text-align: center; 
+    padding:10px; 
+    margin:10px;   
+}
+
+
+.MultiCarousel .MultiCarousel-inner .item > div img{ 
+    /* text-align: center;  */
+    padding: 34px 50px;
+    width: 125%;
+    transition: 2.5s;
+}
+
+.MultiCarousel .MultiCarousel-inner .item > div img:hover{ 
+    /* text-align: center;  */
+    padding: 14px 10px;
+    width: 100%;
+}
+    
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { 
+    position:absolute; 
+    border-radius:50%;
+    top:calc(50% - 20px); 
+}
+    
+.MultiCarousel .leftLst { 
+    left:0; 
+}
+    
+.MultiCarousel .rightLst { 
+    right:0; 
+}
+    
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
+    pointer-events: none; 
+    background:#ccc; 
+}
+
+.i{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.THREE img{
+    margin-right: 5%;
+}

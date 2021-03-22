@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #F1F1F1;
+}
+
+body{
+    text-align: center;
+}
+
+.one{ 
+    border-bottom: 2px solid salmon;
+}
+ 
+.navb .li{
+    margin-left: 25%; 
+    background-color: #fff;
+}
+
+.navb .li li{ 
+    padding: 1% 10%; 
+    cursor:pointer; 
+    text-transform: uppercase;     
+    font-size: 18px;
+    background-color: #fff;
+} 
+
+.navb .li i:hover{
+    padding: 3.4%;
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+.gallery li{
+    font-family: 'Montserrat';
+    float: left;
+    padding: 2%;
+    margin-left: 10%;
+    list-style-type: disc;
+    color: #444;
+    cursor:pointer;
+    text-transform: uppercase;    
+	transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.gallery li:hover{
+    color: black;
+}
+
+
+.three i{
+    background-color: rgb(170, 0, 0);
+    color: white;
+    padding: 5%;
+    border-width: 25%;
+    border: 1px solid #000; 
+    margin-left: 2.5%;
+    transition: 0.5s;
+}
+
+.three i:hover{ 
+    color: aliceblue;
+    background-color: #000;
+    padding: 5%;
+    border: 2.5px solid rgb(170,0,0); 
+}
+
+.three{
+    position: absolute;
+    margin-top: -50%;
+    margin-left: -5%;;
+    text-align: center; 
+    opacity: 0%;
+    transition: 1s;
+} 
+
+.three:hover{
+    opacity: 100%;
+}
+
+.gallery{
+    width: 100%;
+    display: block;
+    min-height: 100vh;
+    padding: 10px 0;
+    font-family: 'Montserrat';
+}
+
+.gallery p{
+    padding-top: 2%;
+}
+
+.gallery button{
+    padding: 3.4% 15%;
+    border-radius: 7%;
+}
+
+.gallery button:hover{
+    color: azure;
+    background-color: #000;
+}
+
+.gallery .gallery-filter{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery .gallery-filter .filter-item.active{
+	color: #000;
+	border-color : #ff9800;
+}
+
+.gallery .gallery-item{
+    width: calc(100% / 4);
+    padding: 15px;
+}
+ 
+.gallery .gallery-item-inner img{
+	width: 100%;
+}
+ 
+.gallery .gallery-item-inner{
+    text-align: center;
+}
+
+.gallery .gallery-item.show{
+	animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.gallery .gallery-item.hide{
+	display: none;
+}
+
+/*responsive*/
+
+@media(max-width: 1024px){
+    .gallery li{ 
+        padding: 2%;
+        margin-left: 7%;  
+        font-size: 16px;
+    }
+}
+@media(max-width: 991px){
+	.gallery .gallery-item{
+		width: 50%;
+	}
+    .gallery .gallery-filter{
+        padding: 0;
+}
+@media(max-width: 767px){
+    .gallery .gallery-item{
+		width: 100%;
+	}	
+	.gallery .gallery-filter .filter-item{
+		margin-bottom: 10px;
+	}
+}  
+
+p i{
+    color: orange;
+}
